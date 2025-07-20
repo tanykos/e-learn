@@ -1,0 +1,6 @@
+@use 'bootstrap/scss/functions';
+@use "bootstrap/scss/bootstrap" with (
+  $primary: #00634B,
+  $font-family-base: 'Inter',
+  $body-bg: #FEFDFC,
+);

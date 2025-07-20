@@ -1,16 +1,11 @@
 @use "./utils/reset";
+@use './utils/bootstrap-custom';
 @use "./utils/variables" as *;
 
 @use "./base/font-face";
 
 html {
   font-size: 18px;
-}
-
-body {
-  font-family: $font-main;
-  color: $color-text-primary;
-  background-color: $color-bg-body;
 }
 
 body:has(dialog.modal[open]) {

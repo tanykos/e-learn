@@ -16,6 +16,16 @@ export default defineConfig({
   },
   css: {
     devSourcemap: true,
+    preprocessorOptions: {
+      scss: {
+        silenceDeprecations: [
+          'import',
+          'mixed-decls',
+          'color-functions',
+          'global-builtin',
+        ],
+      },
+   },
   },
   base: "/tanykos/e-learn/"
 })
