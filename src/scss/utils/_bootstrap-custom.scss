@@ -1,6 +1,32 @@
 @use 'bootstrap/scss/functions';
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1080px,
+  xl: 1260px,
+  xxl: 1440px,
+);
+
+$spacers: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 3rem,
+  6: 3.333rem
+);
+
+$btn-border-radius: 12px;
+$nav-link-font-weight: 500;
+
 @use "bootstrap/scss/bootstrap" with (
   $primary: #00634B,
   $font-family-base: 'Inter',
   $body-bg: #FEFDFC,
+  $container-max-widths: $container-max-widths,
+  $spacers: $spacers,
+  $btn-border-radius: $btn-border-radius,
+  $nav-link-font-weight: $nav-link-font-weight,
 );

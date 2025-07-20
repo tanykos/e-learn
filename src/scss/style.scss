@@ -1,8 +1,12 @@
 @use "./utils/reset";
-@use './utils/bootstrap-custom';
 @use "./utils/variables" as *;
+@use './utils/bootstrap-custom';
+@use 'bootstrap/scss/bootstrap';
 
 @use "./base/font-face";
+
+@use './components/buttons';
+@use './components/navbar';
 
 html {
   font-size: 18px;

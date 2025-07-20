@@ -1,0 +1,32 @@
+@use "../utils/variables" as *;
+
+.btn-sm-custom {
+  --bs-btn-font-size: 16px;
+  --bs-btn-line-height: normal;
+  --bs-btn-border-radius: 12px;
+  --bs-btn-font-weight: 600;
+  --bs-btn-padding-y: 12px;
+  --bs-btn-padding-x: 16px;
+}
+
+.btn-primary {
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-hover-opacity: 1;
+  --bs-btn-active-bg: var(--bs-primary);
+  --bs-btn-active-border-color: var(--bs-primary);
+}
+
+.btn:hover:not(:disabled):not(.disabled) {
+  box-shadow: $btn-hover-box-shadow;
+}
+
+.btn-link {
+  text-decoration: none;
+  
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}

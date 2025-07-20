@@ -27,5 +27,5 @@ export default defineConfig({
       },
    },
   },
-  base: "/tanykos/e-learn/"
+  base: "/e-learn/"
 })

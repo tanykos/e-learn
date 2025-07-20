@@ -1,4 +1,7 @@
 import js from '@eslint/js';
+import globals from 'globals';
+import prettierPlugin from 'eslint-plugin-prettier';
+import prettierConfig from 'eslint-config-prettier';
 
 export default [
   js.configs.recommended,
@@ -11,13 +14,15 @@ export default [
         ...globals.browser
       }
     },
+    plugins: {
+      prettier: prettierPlugin
+    },
     rules: {
+      ...prettierConfig.rules,
+      'prettier/prettier': 'error',
       'no-console': 'warn',
       'prefer-const': 'error',
-      'no-var': 'error',
-      'indent': ['error', 2],
-      'quotes': ['error', 'single'],
-      'semi': ['error', 'always']
+      'no-var': 'error'
     }
   }
 ];
