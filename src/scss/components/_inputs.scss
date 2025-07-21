@@ -18,9 +18,10 @@
 .form-floating > .form-control:focus ~ label,
 .form-floating > .form-select ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label {
-  transform: scale(0.85) translateY(-1.75rem) translateX(10px);
+  transform: scale(0.85) translateY(-1.6rem) translateX(15px);
   background-color: $color-bg-body;
   color: $color-text-accent;
+  padding-inline: 0.25rem;
 }
 
 .form-control:focus,
