@@ -9,6 +9,13 @@
   --bs-btn-padding-x: 16px;
 }
 
+.btn-lg-custom {
+  --bs-btn-font-weight: 600;
+  --bs-btn-padding-y: 14px;
+  --bs-btn-padding-x: 50px;
+  letter-spacing: 0.18px;
+}
+
 .btn-primary {
   --bs-btn-hover-bg: var(--bs-primary);
   --bs-btn-hover-border-color: var(--bs-primary);

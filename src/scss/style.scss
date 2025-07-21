@@ -1,12 +1,13 @@
 @use "./utils/reset";
 @use "./utils/variables" as *;
 @use './utils/bootstrap-custom';
-@use 'bootstrap/scss/bootstrap';
+@use 'bootstrap/scss/bootstrap' as bs;
 
 @use "./base/font-face";
 
 @use './components/buttons';
 @use './components/navbar';
+@use './components/hero-section';
 
 html {
   font-size: 18px;
@@ -14,4 +15,36 @@ html {
 
 body:has(dialog.modal[open]) {
   overflow: hidden;
+}
+
+section h1,
+h1 {
+  font-size: 28px;
+
+  @include bs.media-breakpoint-up(md) {
+    font-size: 36px;
+  }
+
+  @include bs.media-breakpoint-up(lg) {
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  @include bs.media-breakpoint-up(xl) {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 0.64px;
+  }
+}
+
+.hero-content {
+  padding-top: 150px;
+  
+  @include bs.media-breakpoint-up(md) {
+    padding-top: 200px;
+  }
+  
+  @include bs.media-breakpoint-up(lg) {
+    padding-top: 70px;
+  }
 }
