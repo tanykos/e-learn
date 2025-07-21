@@ -1,0 +1,35 @@
+@use "../utils/variables" as *;
+
+.form-floating > .form-control,
+.form-floating > .form-select {
+  height: 2.889rem;
+  min-height: 2.889rem;
+  padding: 0.75rem;
+}
+
+.form-floating > label {
+  padding: 0.75rem;
+}
+
+.form-select {
+  padding: 0.75rem 2.25rem 0.75rem 0.75rem;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-select ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  transform: scale(0.85) translateY(-1.75rem) translateX(10px);
+  background-color: $color-bg-body;
+  color: $color-text-accent;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: $color-text-accent;
+}
+
+.form-floating > .form-control:focus, 
+.form-floating > .form-control:not(:placeholder-shown) {
+  padding-top: 0.75rem;
+}

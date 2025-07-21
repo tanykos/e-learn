@@ -15,11 +15,15 @@ $spacers: (
   3: 1rem,
   4: 1.5rem,
   5: 3rem,
-  6: 3.333rem
+  6: 3.333rem,
+  30: 30px,
+  32: 32px,
 );
 
 $btn-border-radius: 12px;
 $nav-link-font-weight: 500;
+$modal-md: 464px;
+$input-height: 2.778rem;
 
 @use "bootstrap/scss/bootstrap" with (
   $primary: #00634B,
@@ -29,4 +33,6 @@ $nav-link-font-weight: 500;
   $spacers: $spacers,
   $btn-border-radius: $btn-border-radius,
   $nav-link-font-weight: $nav-link-font-weight,
+  $modal-md: $modal-md,
+  $input-height: $input-height,
 );

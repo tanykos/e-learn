@@ -24,7 +24,7 @@
   --bs-btn-active-border-color: var(--bs-primary);
 }
 
-.btn:hover:not(:disabled):not(.disabled) {
+.btn:hover:not(:disabled):not(.disabled):not(.btn-link) {
   box-shadow: $btn-hover-box-shadow;
 }
 

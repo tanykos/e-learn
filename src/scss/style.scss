@@ -8,6 +8,7 @@
 @use './components/buttons';
 @use './components/navbar';
 @use './components/hero-section';
+@use './components/inputs';
 
 html {
   font-size: 18px;
@@ -34,6 +35,19 @@ h1 {
     font-size: 64px;
     font-weight: 700;
     letter-spacing: 0.64px;
+  }
+}
+
+h5 {
+  font-size: 20px;
+
+  @include bs.media-breakpoint-up(md) {
+    font-size: 22px;
+  }
+
+  @include bs.media-breakpoint-up(lg) {
+    font-size: 24px;
+    font-weight: 600;
   }
 }
 
