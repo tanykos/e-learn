@@ -18,6 +18,7 @@ export default defineConfig({
     devSourcemap: true,
     preprocessorOptions: {
       scss: {
+        sourceMap: true,
         silenceDeprecations: [
           'import',
           'mixed-decls',
@@ -25,7 +26,7 @@ export default defineConfig({
           'global-builtin',
         ],
       },
-   },
+    },
   },
   base: "/e-learn/"
 })

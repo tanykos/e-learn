@@ -18,8 +18,8 @@ body:has(dialog.modal[open]) {
   overflow: hidden;
 }
 
-section h1,
-h1 {
+section h2,
+h2 {
   font-size: 28px;
 
   @include bs.media-breakpoint-up(md) {
